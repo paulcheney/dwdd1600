@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ella Carrillo">
+    <meta name="description" content="Learn the reason why everyone has different taste in music">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="music.css">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <title>Unified Sound: Why everyone has different taste in Music</title>
+</head>
+
+<body>
+    <!-- start the page head -->
+    <header>
+        <img src="images/logo.png" alt="Logo for Unified Sound" width="44" height="50">
+        <span>Unified Sound</span>
+    </header>
+
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Why everyone has different taste in Music</a></li>
+            <li><a href="history.html">History behind it</a></li>
+            <li><a href="sources.html">Sources</a></li>
+            <li class="active"><a href="personality.html">Personality Test</a></li>
+        </ul>
+
+    </nav>
+    <!-- start the main content -->
+    <main>
+        <h1>Personality Test</h1>
+        <form method="get" class="myTest" action="thanks.html">
+        
+        <fieldset>
+        <legend>Client Information</legend> 
+        <label>First Name*<input type="text" name="fname" required></label>
+        <label>Last Name*<input type="text" name="lname" required></label>
+        <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label>
+        <label>Email*<input type="email" name="email" required></label>
+        </fieldset> 
+        <p>Please fill out this information to get your results back</p>
+
+        <fieldset>
+        <legend>What is your ideal Friday night?</legend>
+            <label><input type="radio" name="friday" value="concert">A Concert</label>
+            <label><input type="radio" name="friday" value="party">A Party</label>
+            <label><input type="radio" name="friday" value="home">A Cozy Night at Home</label>
+            <label><input type="radio" name="friday" value="outdoors">An Outdoor Adventure</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Which Season feels most like you?</legend>
+            <label><input type="checkbox" name="summer" value="selected">Summer</label>
+            <label><input type="checkbox" name="fall" value="selected">Fall</label>
+            <label><input type="checkbox" name="winter" value="selected">Winter</label>
+            <label><input type="checkbox" name="spring" value="selected">Spring</label>
+        </fieldset>
+
+        <fieldset>
+            <label> Which Movie would you rather watch?
+            <select name="movie">
+            <option value="none">Please Select</option>
+            <option value="romance">A Romance</option>
+            <option value="action">An Action Film</option>
+            <option value="comedy">A Comedy</option>
+            <option value="drama">A Drama</option>
+            </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Which Word describes you best?</legend>
+            <label><input type="checkbox" name="energetic" value="selected">Energetic</label>
+            <label><input type="checkbox" name="calm" value="selected">Calm</label>
+            <label><input type="checkbox" name="emotional" value="selected">Emotional</label>
+            <label><input type="checkbox" name="mysterious" value="selected">Mysterious</label>
+        </fieldset>
+
+        <label> Other facts to know
+            <textarea name="facts"></textarea>
+        </label>
+
+
+
+
+
+
+
+        <input type="submit" value="Try Personality Test">
+        </form>
+        
+
+
+
+
+
+
+
+    </main>
+
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy; 2026 &bull; Ella Carrillo &bull; Web Essentials</p> 
+    </footer>
+
+
+
+</body>
+
+</html>
