@@ -1,0 +1,271 @@
+/* Theme Colors BLUE #012c58 and MAUVE #661039 RED #c51608*/
+
+/*Prevent Problems on Different Browsers*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
+  margin: 0;
+}
+/* header stuff here */
+header {
+  padding: 1rem 10px;
+  display: flex;
+  align-items: center;
+  gap:6px;
+}
+header span {
+  color: #661039;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* small screen navigation */
+@media only screen and (max-width: 640px) {
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  nav a {
+    display: block;
+    text-align: center;
+    padding: 0.8rem;
+    color: #666;
+    text-decoration: none;
+    border-bottom: solid 1px #eee;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  nav .active a {
+    background-color: #012c58;
+    color: white;
+    
+  }
+} /*end small screens*/
+
+/* LARGE SCREEN NAVIGATION */
+@media only screen and (min-width: 641px) {
+  nav {
+    background-color: #eee;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+    display: flex;
+  }
+  nav a {
+    display: block;
+    padding: 0.83rem 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: 700;
+  }
+
+  nav li.active a {
+    color: #012c58;
+  }
+
+  nav li a:hover {
+    background-color: #ddd;
+  }
+} /*end LARGE screens*/
+
+/* main stuff here */
+main {
+  padding: 1rem 10px;
+}
+main h1 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #012c58;
+}
+main h2 {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #444;
+  margin-bottom: 0.2rem;
+}
+main h3 {
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #661039;
+  margin-bottom: 0.2rem;
+}
+main p {
+  font-weight: 200;
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+  line-height: 130%;
+}
+
+main ol {
+  padding: 0.5rem 30px;
+  background-color: #efefef;
+}
+main dl dt {
+  color: #661039;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+main dl dd {
+  color: #024873;
+  font-size: 0.9rem;
+  margin-left: 20px;
+}
+main ul {
+  list-style-type: circle;
+}
+main ul li {
+  line-height: 125%;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+main strong {
+  font-weight: 500;
+  color: black;
+}
+main em {
+  font-weight: 300;
+  color: #012c58;
+}
+main address {
+  font-style: normal;
+  background-color: #eee;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  width: 200px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+main a {
+  color: #024873;
+}
+main a:hover {
+  color: rgb(239, 0, 24);
+}
+
+/* HERO IMAGE stuff here */
+img.hero {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* HOME PAGE IMAGE stuff here */
+.wrapimage {
+  width: 30%;
+  margin: 0;
+  float: right;
+  margin-left: 10px;
+}
+.wrapimage img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.wrapimage figcaption {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/* GALLERY stuff here */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.gallery figure {
+  margin: 0;
+}
+.gallery figcaption {
+  text-align: center;
+  color: #666;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.gallery img {
+  border-radius: 6px;
+}
+.gallery img:hover {
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+
+
+
+/*FORM STYLING HERE*/
+.hireform fieldset {
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+.hireform legend {
+  color: #661039;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.hireform label {
+  margin: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #888;
+}
+.hireform label,
+.hireform select,
+.hireform textarea,
+.hireform [type="text"],
+.hireform [type="tel"],
+.hireform [type="email"] {
+  display: block;
+}
+
+.hireform [type="text"],
+.hireform [type="tel"],
+.hireform [type="email"],
+.hireform select,
+.hireform textarea {
+  border: solid 1px #888;
+  padding: 0.3rem;
+  width: 250px;
+  border-radius: 3px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 200;
+}
+.hireform textarea {
+  height: 6rem;
+}
+.hireform :required {
+  background-color: rgba(77, 156, 51, 0.1);
+}
+
+.hireform [type="submit"] {
+  background-image: linear-gradient(to bottom, #012c58, #661039);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color: white;
+  margin: 1rem 0 0 1vw;
+}
+
+/* footer stuff here */
+footer {
+  background-color: #eaeaea;
+  text-align: center;
+  color: #333;
+  font-size: 0.8rem;
+  padding: 1rem 0;
+  letter-spacing: 4px;
+  clear: both;
+}
+
+/* LIMIT OVERALL WIDTH */
+header, nav, main, footer {
+  max-width: 64rem;
+  margin: 0 auto;
+}
